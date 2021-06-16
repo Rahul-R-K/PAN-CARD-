@@ -7,25 +7,26 @@
     <title>PAN Update Forum</title>
     <style>
       span{
-          color: tomato;
+          color: red;
       }
-      td:span {color: rgb(32, 214, 32); }
+     
       table,th,td{
                         border: 1px solid rgb(1, 8, 4);
                         
                         border-collapse: collapse;
                     }
         *{
-            margin: 3px 1px 3px 1px;
+            margin:3px,1px,3px,1px;
+             
         }            
     </style>
 </head>
 <body>    
 <form method="POST" onsubmit="output()"> 
-    <div style="background-color: rgb(240, 226, 173);">
-       <div style="background-color: rgb(93, 18, 233);">
-           <h5 style="text-align: center;color: wheat;">Request For The New Pan Card (or) Changes</h5>
-           <p style="text-align: center;font-style:italic;color: white ;">Fileds mareked with <span>*</span>(asteric)are mandatory. To avoid mistakes please refer <u style="color:tomato;">Guidelines</u>and<u style="color:tomato;">Instructions</u></p>
+    <div style="background-color: rgba(240, 221, 184);">
+       <div style="background-color: brown;color: white;">
+           <div style="text-align: center;color: white; font-weight: bold;">Request For The New Pan Card (or) Changes</div>
+           <div style="text-align: center;font-style:italic;color: white ;">Fileds mareked with <span>*</span>(asteric)are mandatory. To avoid mistakes please refer <u style="color:orange;">Guidelines</u>and<u style="color:orange;">Instructions</u></div>
        </div>
        <div style="font-weight: bold;">
           <table style="width: 100%;">
@@ -59,7 +60,7 @@
                <tr>
                    <td></td>
                    <td colspan="2">
-                       <p style="display: inline;">Title</p>
+                       <label style="display: inline;">Title</label>
                        <div style="display: inline;">
                         <label for="yes" style="padding-left:60px; font-weight: lighter ;" >Shri/Mr</label>
                         <input type="radio" id="yes" name="name" required>
@@ -75,12 +76,12 @@
                    <td></td>
                    <td colspan="2">
                        <div style="display: inline;">
-                        <label for="1name" style="padding-left:50px ;" >First Name</label>
-                        <label for="mname" style="padding-left:95px ;" >Middle Name</label>
-                        <label for="2name" style="padding-left:105px ;" >Last Name</label><br>
-                        <input type="text" id="1name" name="fname" required style="padding-right:10 ;">
-                        <input type="text" id="mname"  name ="mname" style="padding-right:10" ;>
-                        <input type="text" id="2name"name="lname" required>
+                        <label for="1name" style="padding-left:5px ;" >Last Name/Surname</label>
+                        <label for="mname" style="padding-left:90px ;" >First Name</label>
+                        <label for="2name" style="padding-left:95px ;" >Middle Name</label><br>
+                        <input type="text" id="1name" name="fname" required >
+                        <input type="text" id="mname"  name ="mname" required >
+                        <input type="text" id="2name"name="lname"  >
                     </div>
                    </td>
                </tr>
@@ -94,7 +95,7 @@
                <tr>
                    <td></td>
                    <td colspan="2">
-                    <input type="text"id="name"name="k" required>
+                    <input type="text"id="name"name="k" required >
                    </td>
                </tr>
                <tr>
@@ -125,12 +126,12 @@
                    <td></td>
                    <td colspan="2">
                     <div style="display: inline;">
-                        <label for="no1" style="padding-left:50px ;" >First Name</label>
-                        <label for="no2" style="padding-left:95px ;" >Middle Name</label>
-                        <label for="no3" style="padding-left:105px ;" >Last Name</label><br>
-                        <input type="text" id="no1"name="1name" required style="padding-right:10 ;">
-                        <input type="text" id="no2"name="2name"  style="padding-right:10 ;">
-                        <input type="text" id="no3"name="3name" required>
+                        <label for="no1" style="padding-left:5px ;" >Last Name/Surname</label>
+                        <label for="no2" style="padding-left:90px ;" >First Name</label>
+                        <label for="no3" style="padding-left:95px ;" >Middle Name</label><br>
+                        <input type="text" id="no1"name="1name" required>
+                        <input type="text" id="no2"name="2name"  required>
+                        <input type="text" id="no3"name="3name"  >
                     </div>
                    </td>
                </tr>
@@ -144,12 +145,12 @@
                 <td></td>
                 <td colspan="2">
                  <div style="display: inline;">
-                     <label for="firstname" style="padding-left:50px ;" >First Name</label>
-                     <label for="middlename" style="padding-left:95px ;" >Middle Name</label>
-                     <label for="lastname" style="padding-left:105px ; " >Last Name</label><br>
-                     <input type="text" id="firstname"name="fmname" required style="padding-right:10 ;">
-                     <input type="text" id="middlename"name="mfname" style="padding-right:10 ;">
-                     <input type="text" id="lastname"name="lmname" required>
+                     <label for="firstname" style="padding-left:5px ;" >Last Name/Surname</label>
+                     <label for="middlename" style="padding-left:90px ;" >First Name</label>
+                     <label for="lastname" style="padding-left:95px ; " >Middle Name</label><br>
+                     <input type="text" id="firstname"name="fmname" required >
+                     <input type="text" id="middlename"name="mfname"required >
+                     <input type="text" id="lastname"name="lmname" >
                  </div>
                 </td>
                </tr>
@@ -329,11 +330,11 @@
                             <tr>
                                 <td>
                                     <label for="std">Area/STD Code</label><br>
-                                    <input type="text" id="std">
+                                    <input type="number" id="std">
                                 </td>
                                 <td>
                                     <label for="numb">Telephone No/Mobile No</label><br>
-                                    <input type="text" id="numb" required>
+                                    <input type="number" id="numb" required>
                                 </td>
 
                             </tr>
@@ -392,7 +393,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td colspan="2"><p>15.Verification</p></td>
+                <td colspan="2"><label>15.Verification</label></td>
             </tr>
             <tr>
                 <td></td>
@@ -472,11 +473,11 @@
             </tr>
             <tr>
                 <td></td>
-                <td colspan="2"> <input type="radio" id="oo"> <label style="font-weight: lighter;">Online Payment</label></td>
+                <td colspan="2"> <input type="radio" id="oo"> <label >Online Payment</label></td>
             </tr>
         
         </table>
-
+        <div style="font-weight: lighter;border-bottom-style: solid;" >
             <p style="display: inline;"><label for="app">For paperless PAN application:</label> 
              <div style="padding: 50px; display: inline;"><input type="radio" id="s" name="mm"><label for="s">Yes</label></div> <div style="display: inline"> <input type="radio"id="no" name="mm"><label for="no">NO</label></div>
             </p>
@@ -489,35 +490,39 @@
                     <option value="+91">bbb</option>
                     <option value="044">aaa</option>
                 </select>  <u style="color: brown;">Guidelines for DSC user</u>
-            </p><br>
+            </p><br><br>
             <p style="display: inline;"> <label for="kkk" >Upload Photo</label> 
                  <input type="file" name="imag" id="kkk" accept=".jpg" style="padding-left: 400px;">
                   <label for="jjj" style="padding-left:20px;">Upload Signature</label><input type="file" id="jjj"name="kkimage" accept=".jpg" style="padding-left:30px ;"> 
-            </p><br>
+            </p><br><br>
             <p style="display: inline;"> <label for="kkk">Upload Document</label> 
                 <input type="file" name="xx" id="kkk" style="padding-left:369px ;">
                  
-           </p><br>
+           </p><br><br>
 
 
 
            <p style="display: inline;">
               <label for="ii" style="padding-right:253px ;">ALLREADY UPLODED PHOTO: </label> <input type="text" id="ii"name="oo" style="padding-left: 70px;">
-           </p><br>
+           </p><br><br>
            <p style="display: inline;">
             <label for="rr" style="padding-right:245px ;">ALLREADY UPLODED Signature: </label> <input type="text" id="rr"name="ii" style="padding-left: 05px;">
-         </p><br>
+         </p><br><br>
          <p style="display: inline;">
             <label for="jj" style="padding-right:234px ;">ALLREADY UPLODED Documents: </label> <input type="text" id="jj"name="pp" style="padding-left: 100px;">
-         </p><br>
+         </p><br><br>
 
-        <label style="padding-left: 550px;"></label><input type="submit" name="submit" style="color: darkblue; font-weight: bold;">
+        <label style="padding-left: 550px;"></label><input type="submit" name="submit" style="color: rgb(1, 1, 34); font-weight: bold;"><br><br>
+    
+          </div>
        </div>
 </form>
 <script>
     function output(){
         alert("Applied Successfully Thank You")
+        
     }
 </script>
+
 </body>
 </html>
