@@ -54,7 +54,7 @@
                <tr>
                    <td><input type="checkbox"></td>
                    <td colspan="2">
-                       <p ><span>*</span>1.Name</p>
+                       <label ><span>*</span>1.Name</label>
                    </td>
                </tr>
                <tr>
@@ -73,18 +73,15 @@
                    </td>
                </tr>
                <tr>
-                   <td></td>
-                   <td colspan="2">
-                       <div style="display: inline;">
-                        <label for="1name" style="padding-left:5px ;" >Last Name/Surname</label>
-                        <label for="mname" style="padding-left:90px ;" >First Name</label>
-                        <label for="2name" style="padding-left:95px ;" >Middle Name</label><br>
-                        <input type="text" id="1name" name="fname" required >
-                        <input type="text" id="mname"  name ="mname" required >
-                        <input type="text" id="2name"name="lname"  >
-                    </div>
-                   </td>
-               </tr>
+                <td></td>
+                <td colspan="2"><div style="display: inline;">
+                    <label for="1name" style="padding-left:1px ;" >Last Name/Surname</label>
+                    <label for="fname" style="padding-left:200px ;" >First Name</label>
+                    <label for="mname" style="padding-left:369px ;" >Middle Name</label><br>
+                    <input type="text" id="1name" name="fname"; required >
+                    <input type="text" id="fname"  name ="mname" style="position:absolute;right:840px;" required >
+                    <input type="text" id="mname"name="lname" style="position:absolute;right:390px;"></div></td> 
+            </tr>
                <tr>
                    <td></td>
                    <td colspan="2">
@@ -107,7 +104,7 @@
                <tr>
                    <td></td>
                    <td style="width: 700px;">
-                       <p>Whether mother is single parent and you wish to apply for PAN by furnishing the name of your mother only</p>
+                       <label>Whether mother is single parent and you wish to apply for PAN by furnishing the name of your mother only</label>
                    </td>
                    <td >
                     <label for="yes" style="font-weight: lighter;">Yes</label>
@@ -123,18 +120,14 @@
                    </td>
                </tr>
                <tr>
-                   <td></td>
-                   <td colspan="2">
-                    <div style="display: inline;">
-                        <label for="no1" style="padding-left:5px ;" >Last Name/Surname</label>
-                        <label for="no2" style="padding-left:90px ;" >First Name</label>
-                        <label for="no3" style="padding-left:95px ;" >Middle Name</label><br>
-                        <input type="text" id="no1"name="1name" required>
-                        <input type="text" id="no2"name="2name"  required>
-                        <input type="text" id="no3"name="3name"  >
-                    </div>
-                   </td>
-               </tr>
+                <td></td>
+                <td colspan="2"><div style="display: inline;"><label for="lastname" style="padding-left:1px ;" >Last Name/Surname</label>
+                    <label for="firstname" style="padding-left:200px ;" >First Name</label>
+                    <label for="middlename" style="padding-left:369px ;" >Middle Name</label><br>
+                    <input type="text" id="1name" name="lastname" required >
+                    <input type="text" id="mname"  name ="firstname" style="position:absolute;right:840px;" required>
+                    <input type="text" id="2name"name="middlename" style="position:absolute;right:390px;"></div> </td>  
+            </tr>
                <tr>
                 <td><input type="checkbox"></td>
                 <td colspan="2">
@@ -143,22 +136,19 @@
                </tr>
                <tr>
                 <td></td>
-                <td colspan="2">
-                 <div style="display: inline;">
-                     <label for="firstname" style="padding-left:5px ;" >Last Name/Surname</label>
-                     <label for="middlename" style="padding-left:90px ;" >First Name</label>
-                     <label for="lastname" style="padding-left:95px ; " >Middle Name</label><br>
-                     <input type="text" id="firstname"name="fmname" required >
-                     <input type="text" id="middlename"name="mfname"required >
-                     <input type="text" id="lastname"name="lmname" >
-                 </div>
-                </td>
-               </tr>
+                <td colspan="2"><div style="display: inline;">
+                    <label for="1name" style="padding-left:1px ;" >Last Name/Surname</label>
+                    <label for="2name" style="padding-left:200px ;" >First Name</label>
+                    <label for="3name" style="padding-left:369px ;" >Middle Name</label><br>
+                    <input type="text" id="1name" name="fname">
+                    <input type="text" id="2name"  name ="mname" style="position:absolute;right:840px;">
+                    <input type="text" id="3name"name="lname" style="position:absolute;right:390px;"></div></td>  
+            </tr>
                <tr>
                    <td></td>
                    <td style="width: 700;">
                        <label><span>*</span>4.Select Parent name which is to be print on card</label>
-                       <p style="font-weight: lighter; color: blue;">(in case no option is provided then PAN card will be issued with father's name)</p>
+                       <label style="font-weight: lighter; color: blue;">(in case no option is provided then PAN card will be issued with father's name)</label>
                    </td>
                    <td>         
                        <label for="fathername" style="font-weight: lighter;">Father Name</label>
@@ -206,7 +196,7 @@
                <tr>
                    <td><input type="checkbox"></td>
                    <td>
-                       <label><span>*</span> 9.Adress for Communication</label>
+                       <label><span>*</span> 9.Address for Communication</label>
                    </td>
                    <td>
                        <label for="home" style="font-weight: lighter;">Residential</label>
@@ -302,7 +292,7 @@
             </tr>
             <tr>
                 <td><input type="checkbox" name="m" id=""></td>
-                <td><span>*</span> 11.Number<p style="font-weight: lighter;">(Country Code is Compulsory)</p></td>
+                <td><span>*</span> 11. Telephone No.<label style="font-weight: lighter;"><br>(Country Code is Compulsory)</label></td>
                 <td style="font-weight: lighter;">
                     <div>
                         <table style=" width: 700px;border-collapse: collapse;" > 
@@ -318,11 +308,11 @@
                             <tr>
                                 <td> 
                                     <input type="radio" id="mobile"name="num" required>
-                                    <label for="mobile">Mobile NO</label>
+                                    <label for="mobile">Mobile No.</label>
                                 </td>
                                 <td>
                                     <input type="radio" id="telephone" name="num"required>
-                                    <label for="Telephone">Telephone NO</label>
+                                    <label for="Telephone">Telephone No.</label>
                                 </td>
                             </tr>
                             <tr>
@@ -331,7 +321,7 @@
                                     <input type="number" id="std">
                                 </td>
                                 <td>
-                                    <label for="numb">Telephone No/Mobile No</label><br>
+                                    <label for="numb">Telephone No./Mobile No</label><br>
                                     <input type="number" id="numb" required>
                                 </td>
 
@@ -359,13 +349,13 @@
                     <label><span>*</span>12.AADHAAR NUMBER:</label>
                 </td>
                 <td>
-                    <input type="text" name="n" id=""required><p style="color: blue;">In case AADHAAR number is provide,</p><p style="color: blue;">then proof of AADHAAR along with supporting documents is to be submitted to NSDL</p>
+                    <input type="text" name="n" id=""required><br><label style="color: blue; font-style: italic;">In case AADHAAR number is provide,</label><br><label style="color: blue; font-style: italic;">then proof of AADHAAR along with supporting documents is to be submitted to NSDL</label>
                 </td>
             </tr>
             <tr>
                 <td></td>
                 <td>
-                    <label for="name"><span>*</span>Name as per AADHAAR card<P style="padding-left:100px ;">(or)</P><p>as per the enrollment id of AADHAAR application form</p></label>
+                    <label for="name"><span>*</span>Name as per AADHAAR card<label><br>(or)<br></label><label>as per the enrollment id of AADHAAR application form</label></label>
                 </td>
                 <td><input type="text" id="name"required style="width: 300px;"></td>
             </tr>
@@ -381,13 +371,13 @@
             </tr>
             <tr>
                 <td></td>
-                <td><label for="1">Pan1</label><input type="text" id="1"name="q"> </td>
-                <td><label for="2">Pan2</label><input type="text" id="2"namw="w"> </td>
+                <td><label for="1">PAN1</label><input type="text" id="1"name="q"> </td>
+                <td><label for="2">PAN2</label><input type="text" id="2"namw="w"> </td>
             </tr>
             <tr>
                 <td></td>
-                <td><label for="3">Pan3</label><input type="text" id="3"name="u"> </td>
-                <td><label for="4">Pan4</label><input type="text" id="4"name="o"> </td>
+                <td><label for="3">PAN3</label><input type="text" id="3"name="u"> </td>
+                <td><label for="4">PAN4</label><input type="text" id="4"name="o"> </td>
             </tr>
             <tr>
                 <td></td>
@@ -400,8 +390,8 @@
                     <option name="Please Select" >---------------Please Select---------------</option>
                     <option value="+91">bbb</option>
                     <option value="044">aaa</option>
-                  </select> <label>do herbly declare that is stated above is true to <br> the best of my knowledge ad belief.</label> </label><br>
-                   <label for="hh"> I have enclosed </label><input type="text" id="hh"name="//"> <label>(number of documents) in support of proposed changes/correction.</label>
+                  </select> <label>do hereby declare that is stated above is true to <br> the best of my knowledge ad belief.</label> </label><br>
+                   <label for="hh"> I have enclosed </label><input type="text" id="hh"name="//"> <label>(number of documents) in support of proposed changes/corrections.</label>
                 </td>
             </tr>
             <tr>
@@ -493,18 +483,18 @@
             <p style="display: inline;"> <label for="kkk">Upload Document</label> 
                 <input type="file" name="xx" id="kkk" style="padding-left:369px ;">
            </p><br>
-           <p> <a href="https://digilocker.gov.in/"><button type="button" style="color:black;font-weight: bold; ">Fetch from DigiLocker</button><a></p><br>
+           <p> <a href="https://digilocker.gov.in/"><button type="button" style="color:black;font-weight: bold; "><img width="15px" height="15px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl_XhiK0NfA1pFCm2oyhLJCufjsrOtBWukKw&usqp=CAU" /> Fetch from DigiLocker</button><a></p><br>
            <p style="display: inline;">
-              <label for="ii" style="padding-right:253px ;">ALLREADY UPLODED PHOTO: </label> <input type="text" id="ii"name="oo" style="padding-left: 70px;">
+              <label for="ii" style="padding-right:253px ;">ALREADY UPLODED PHOTO: </label> <input type="text" id="ii"name="oo" style="padding-right: 100px; position:absolute;right:750px;">
            </p><br><br>
            <p style="display: inline;">
-            <label for="rr" style="padding-right:245px ;">ALLREADY UPLODED Signature: </label> <input type="text" id="rr"name="ii" style="padding-left: 05px;">
+            <label for="rr" style="padding-right:245px ;">ALREADY UPLODED SIGNATURE: </label> <input type="text" id="rr"name="ii" style="padding-left: 10px;">
          </p><br><br>
          <p style="display: inline;">
-            <label for="jj" style="padding-right:234px ;">ALLREADY UPLODED Documents: </label> <input type="text" id="jj"name="pp" style="padding-left: 100px;">
-         </p><br><br>
+            <label for="jj" style="padding-right:234px ;">ALREADY UPLODED DOCUMENTS: </label> <input type="text" id="jj"name="pp" style="padding-left: 200px; padding-bottom: 90px;">
+         </p><br>
 
-        <label style="padding-left: 550px;"></label><input type="submit" name="submit" style="color: rgb(1, 1, 34); font-weight: bold;"><br><br>
+        <label style="padding-left: 630px;"></label><input type="submit" name="submit" style="color: rgb(1, 1, 34); font-weight: bold;"><br><br>
         </div>
        </div>
 </form>
